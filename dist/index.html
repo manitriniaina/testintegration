@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test intégration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="h-auto lg:h-screen bg-pseudo-primary">
+        <div class="container mx-auto">
+            <div class="relative z-10">
+                <div class="container relative mx-auto flex flex-row justify-between items-center py-4">
+                    <div class="flex flex-row items-center">
+                      <a href="#" class="text-base md:text-md lg:text-xl font-bold text-white">
+                        <h1 class="text-base lg:text-xl font-bold text-white">CKC-net</h1>
+                      </a>
+                    </div>
+                    <div class="md:hidden mr-auto">
+                        <button id="menu-toggle" class="block p-2 text-gray-600 hover:text-gray-900">
+                          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </button>
+                    </div>
+                    <nav id="menu" class="hidden md:flex gap-1 lg:gap-5 flex-row space-x-0 lg:space-x-4">
+                        <a href="#" class="text-white hover:text-gray-900 text-xs lg:text-sm uppercase font-medium">Lorem ipsum</a>
+                        <a href="#" class="text-white hover:text-gray-900 text-xs lg:text-sm uppercase font-medium">Lorem ipsum</a>
+                        <a href="#" class="text-white hover:text-gray-900 text-xs lg:text-sm uppercase font-medium">Lorem ipsum</a>
+                        <a href="#" class="text-white hover:text-gray-900 text-xs lg:text-sm uppercase font-medium">Lorem ipsum</a>
+                        <a href="#" class="text-white hover:text-gray-900 text-xs lg:text-sm uppercase font-medium">Lorem ipsum</a>
+                    </nav>
+                    <div class="flex flex-row items-center">
+                        <button class="bg-transparent-gray py-3 px-4 text-white hover:text-gray-900 mr-4">EN</button>
+                        <button class="btn btn-primary px-8 py-3">Lorem ipsum</button>
+                    </div>
+                </div>
+    
+                <div class="flex-col w-full lg:w-3/4 mx-auto pt-20 pb-10 px-10">
+                    <h1 class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing.</h1>
+                    <div class="mt-4">
+                        <!-- Tabs -->
+                        <ul id="tabs" class="flex lg:inline-flex pt-2">
+                          <li class="flex-1 lg:flex-auto bg-red-300 text-white px-3 lg:px-10 uppercase text-xs text-center text-lxs py-2 -mb-px"><a id="default-tab" href="#first">LOREM IPSUM</a></li>
+                          <li class="flex-1 lg:flex-auto bg-gradient-light px-3 lg:px-10 uppercase text-xs text-lxs text-center py-2"><a href="#second">LOREM IPSUM</a></li>
+                          <li class="flex-1 lg:flex-auto bg-gradient-light px-3 lg:px-10 uppercase text-xs text-lxs text-center py-2"><a href="#third">LOREM IPSUM</a></li>
+                          <li class="flex-1 lg:flex-auto bg-gradient-light px-3 lg:px-10 uppercase text-xs text-lxs text-center py-2"><a href="#fourth">LOREM IPSUM</a></li>
+                        </ul>
+                      
+                        <!-- Tab Contents -->
+                        <div id="tab-contents">
+                          <div id="first" class="bg-white p-4 pt-6">
+                              <form class="flex justify-between gap-5 px-5 flex-wrap" action="" method="post">
+                                    <div class="w-full lg:w-auto">
+                                        <p class="text-xs font-bold">Lorem ipsum</p>
+                                        <div class="mt-3">
+                                            <input type="text" name="name" id="name" class="w-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-xs font-bold">Lorem ipsum</p>
+                                        <div class="mt-3">
+                                            <div class="range-slider">
+                                              <div class="progress"></div>
+                                              <span class="range-min-wrapper">
+                                                <input class="range-min" type="range" min="0" max="100" value="25">
+                                              </span>
+                                              <span class="range-max-wrapper">
+                                                <input class="range-max" type="range" min="0" max="100" value="100">
+                                              </span>
+                                            </div>
+                                            <div class="flex justify-between relative z-1">
+                                                <div class="min-value numberVal">
+                                                  <input type="number" class="bg-transparent w-auto" min="0" max="100" value="25" disabled>
+                                                </div>
+                                                <div class="max-value numberVal">
+                                                  <input type="number" class="bg-transparent w-auto" min="0" max="100" value="75" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-xs font-bold">Lorem ipsum</p>
+                                        <div class="mt-3">
+                                            <div class="range-slider">
+                                              <div class="progress"></div>
+                                              <span class="range-min-wrapper">
+                                                <input class="range-min" type="range" min="0" max="100" value="25">
+                                              </span>
+                                              <span class="range-max-wrapper">
+                                                <input class="range-max" type="range" min="0" max="100" value="100">
+                                              </span>
+                                            </div>
+                                            <div class="flex justify-between relative z-1">
+                                                <div class="min-value numberVal">
+                                                  <input type="number" class="bg-transparent w-auto" min="0" max="100" value="25" disabled>
+                                                </div>
+                                                <div class="max-value numberVal">
+                                                  <input type="number" class="bg-transparent w-auto" min="0" max="100" value="75" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-xs font-bold">Lorem ipsum</p>
+                                        <div class="mt-3">
+                                            <div class="range-slider">
+                                              <div class="progress"></div>
+                                              <span class="range-min-wrapper">
+                                                <input class="range-min" type="range" min="0" max="100" value="25">
+                                              </span>
+                                              <span class="range-max-wrapper">
+                                                <input class="range-max" type="range" min="0" max="100" value="100">
+                                              </span>
+                                            </div>
+                                            <div class="flex justify-between relative z-1">
+                                                <div class="min-value numberVal">
+                                                  <input type="number" class="bg-transparent w-auto" min="0" max="100" value="25" disabled>
+                                                </div>
+                                                <div class="max-value numberVal">
+                                                  <input type="number" class="bg-transparent w-auto" min="0" max="100" value="75" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-auto mx-auto lg:ml-auto">
+                                        <button class="btn btn-primary px-8 py-3 w-24 h-16 flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                                                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z"></path></g></g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                              </form>
+                          </div>
+                          <div id="second" class="bg-white hidden p-4 pt-6">
+                            <div class="flex px-5">
+                                <p class="text-xs font-bold">Second tab</p>
+                            </div>
+                          </div>
+                          <div id="third" class="bg-white hidden p-4 pt-6">
+                            <div class="flex px-5">
+                                <p class="text-xs font-bold">Third tab</p>
+                            </div>
+                          </div>
+                          <div id="fourth" class="bg-white hidden p-4 pt-6">
+                            <div class="flex px-5">
+                                <p class="text-xs font-bold">Fourth tab</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="">
+        <section class="bg-red-300 py-10 text-white">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <p class="mx-auto lg:max-w-[715px] text-md lg:text-xl lg:leading-lxl">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex w-full col-transform flex-col lg:flex-row">
+                <div class="flex-1 max-h-56 lg:max-h-96 lg:h-96 relative bg-pseudo-primary">
+                    <img src="assets/images/roches-brunes-rivage.jpg" alt="image" class="w-full h-full object-cover">
+                    <div class="flex h-full absolute top-0 left-0 z-20">
+                        <div class="content flex flex-col justify-end px-8 pb-10">
+                            <p class="uppercase text-xs text-red-300">LOREM IPSUM</p>
+                            <p class="text-base lg:text-md text-white font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 max-h-56 lg:max-h-96 lg:h-96 relative bg-pseudo-primary">
+                    <img src="assets/images/bateaux-blancs-ocean.jpg" alt="image" class="w-full h-full object-cover">
+                    <div class="flex h-full absolute top-0 left-0 z-20">
+                        <div class="content flex flex-col justify-end px-8 pb-10">
+                            <p class="uppercase text-xs text-red-300">LOREM IPSUM</p>
+                            <p class="text-base lg:text-md text-white font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 max-h-56 lg:max-h-96 lg:h-96 relative bg-pseudo-primary">
+                    <img src="assets/images/plongeur-dans-eau.jpg" alt="image" class="w-full h-full object-cover">
+                    <div class="flex h-full absolute top-0 left-0 z-20">
+                        <div class="content flex flex-col justify-end px-8 pb-10">
+                            <p class="uppercase text-xs text-red-300">LOREM IPSUM</p>
+                            <p class="text-base lg:text-md text-white font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-10">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="grid grid-cols-4 gap-5 w-4/5 xl:w-3/5 mx-auto mt-16">
+                    <div class="flex flex-col px-5 text-center">
+                        <p class="text-md font-bold lg:font-normal lg:text-3xl lg:leading-l2xl text-red-300">345</p>
+                        <p class="uppercase text-red-300 text-sm leading-lxs lg:text-[17px]">Lorem ipsum</p>
+                    </div>
+                    <div class="flex flex-col px-5 text-center">
+                        <p class="text-md font-bold lg:font-normal lg:text-3xl lg:leading-l2xl text-red-300">1289</p>
+                        <p class="uppercase text-red-300 text-sm leading-lxs lg:text-[17px]">Lorem ipsum</p>
+                    </div>
+                    <div class="flex flex-col px-5 text-center">
+                        <p class="text-md font-bold lg:font-normal lg:text-3xl lg:leading-l2xl text-red-300">387</p>
+                        <p class="uppercase text-red-300 text-sm leading-lxs lg:text-[17px]">Lorem ipsum</p>
+                    </div>
+                    <div class="flex flex-col px-5 text-center">
+                        <p class="text-md font-bold lg:font-normal lg:text-3xl lg:leading-l2xl text-red-300">2137</p>
+                        <p class="uppercase text-red-300 text-sm leading-lxs lg:text-[17px]">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex relative h-[450px] lg:max-h-[500px]">
+                <div class="flex-auto w-full md:w-1/2 lg:w-2/3 bg-pseudo-primary">
+                    <img src="assets/images/cruise-ship-ocean.jpg" alt="image" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-auto w-32 lg:w-1/3 bg-pseudo-primary">
+                    <img src="assets/images/yacht-blanc-eau-calmes.jpg" alt="image" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center z-20">
+                    <div class="container mx-auto">
+                        <div class="w-2/3">
+                            <p class="uppercase text-xs text-red-300">LOREM IPSUM</p>
+                            <div class="mb-10 mt-5">
+                                <p class="text-md lg:text-xl lg:leading-lxl text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                <p class="text-white font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overflow-hidden bg-gray-300 py-14">
+            <div class="relative">
+                <div class="w-full py-20 lg:py-0 relative lg:absolute top-0 left-0 h-full flex flex-col justify-center z-20">
+                    <div class="container mx-auto">
+                        <div class="w-full lg:w-1/3 ">
+                            <div class="w-full">
+                                <p class="uppercase text-xs text-red-300">LOREM IPSUM</p>
+                                <div class="mb-10 mt-5">
+                                    <p class="text-md lg:text-xl lg:leading-lxl font-medium mb-5">Lorem ipsum dolor sit amet</p>
+                                </div>
+                                <div class="buttons-slider flex gap-10 mt-10">
+                                    <button class="slick-prev">
+                                        <img src="assets/images/arrow-left.png" alt="arrow-left">
+                                    </button>
+                                    <button class="slick-next">
+                                        <img src="assets/images/arrow-right.png" alt="arrow-right">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-2/3 pl:0 lg:pl-36 ml-auto">
+                    <div class="slider-hidden">
+                        <div class="item h-[510px] mx-4 relative bg-pseudo-linear">
+                            <img src="assets/images/photo-yacht-noir-blanc.jpg" alt="image" class="w-full h-full object-cover">
+                            <div class="w-full h-full absolute top-0 left-0 flex flex-col justify-end text-white z-10">
+                                <div class="p-8">
+                                    <p class="text-[30px] leading-lxl">Lorem ipsum</p>
+                                    <p>Lorem ipsum | Lorem ipsum | 2018</p>
+                                    <p>From <span class="text-red-300">29.000.000 €</span> per week</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item h-[510px] mx-4 relative bg-pseudo-linear">
+                            <img src="assets/images/photo-yacht-noir-blanc.jpg" alt="image" class="w-full h-full object-cover">
+                            <div class="w-full h-full absolute top-0 left-0 flex flex-col justify-end text-white z-10">
+                                <div class="p-8">
+                                    <p class="text-[30px] leading-lxl">Lorem ipsum</p>
+                                    <p>Lorem ipsum | Lorem ipsum | 2018</p>
+                                    <p>From <span class="text-red-300">29.000.000 €</span> per week</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item h-[510px] mx-4 relative bg-pseudo-linear">
+                            <img src="assets/images/photo-yacht-noir-blanc.jpg" alt="image" class="w-full h-full object-cover">
+                            <div class="w-full h-full absolute top-0 left-0 flex flex-col justify-end text-white z-10">
+                                <div class="p-8">
+                                    <p class="text-[30px] leading-lxl">Lorem ipsum</p>
+                                    <p>Lorem ipsum | Lorem ipsum | 2018</p>
+                                    <p>From <span class="text-red-300">29.000.000 €</span> per week</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto">
+                <div class="mt-28 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="h-[250px] lg:h-[429px] relative bg-pseudo-linear">
+                        <img src="assets/images/homme-equitation-bateau-mer.jpg" alt="image" class="w-full h-full object-cover">
+                        <div class="w-full h-full absolute top-0 left-0 flex flex-col justify-end text-white z-10">
+                            <div class="p-8">
+                                <p class="text-red-300 text-sm leading-lsm">POSTED 10 MARCH 2023</p>
+                                <p class="text-md leading-lmd">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[250px] lg:h-[429px] relative bg-pseudo-linear">
+                        <img src="assets/images/bateaux-blancs-ocean.jpg" alt="image" class="w-full h-full object-cover">
+                        <div class="w-full h-full absolute top-0 left-0 flex flex-col justify-end text-white z-10">
+                            <div class="p-8">
+                                <p class="text-red-300 text-sm leading-lsm">POSTED 10 MARCH 2023</p>
+                                <p class="text-md leading-lmd">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[250px] lg:h-[429px] relative">
+                        <div class="flex h-full items-center justify-center">
+                            <div class="w-10/12">
+                                <p class="uppercase text-xs text-red-300">LOREM IPSUM</p>
+                                <div class="mb-10 mt-5">
+                                    <p class="text-md lg:text-xl lg:leading-lxl mb-5">Lorem ipsum dolor sit amet</p>
+                                </div>
+                                <a href="#" class="btn btn-primary">Lorem ipsum</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-14">
+            <div class="container mx-auto">
+                <div class="bg-pseudo-primary overflow-hidden relative text-center text-white max-h-[350px] lg:max-h-[500px]">
+                    <img src="assets/images/bateau-blanc-bleu.jpg" alt="image" class="w-full h-full object-cover">
+                    <div class="flex items-center justify-center px-10 absolute top-0 left-0 w-full h-full z-10">
+                        <div class="relative">
+                            <p class="uppercase text-xs text-red-300">LOREM IPSUM</p>
+                            <div class="mb-10 mt-5">
+                                <p class="text-md lg:text-xl lg:leading-lxl mb-5">Lorem ipsum dolor sit amet</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">Lorem ipsum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="py-10 mt-2">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center lg:text-left">
+                <div class="text-center">
+                    <p class="text-red-300 text-xl font-bold">CKC-NET</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    <div class="py-4">
+                        <p class="text-red-300 text-[30px] leading-[46px]">+33 1 01 02 03 04</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-red-300 uppercase text-sm">LOREM IPSUM</p>
+                    <ul class="mt-4">
+                        <li><a href="#" class="text-base">Lorem ipsum 1</a></li>
+                        <li><a href="#" class="text-base">Lorem ipsum 2</a></li>
+                        <li><a href="#" class="text-base">Lorem ipsum 3</a></li>
+                    </ul>
+
+                    <div class="mt-8">
+                        <p class="text-red-300 uppercase text-sm">JOIN US ON SOCIAL MEDIA</p>
+                        <div class="flex justify-center lg:justify-start py-3 gap-3">
+                            <a href="#" class="text-base">
+                                <img src="assets/images/instagram.png" alt="instagram">
+                            </a>
+                            <a href="#" class="text-base">
+                                <img src="assets/images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="#" class="text-base">
+                                <img src="assets/images/youtube.png" alt="youtube">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-red-300 uppercase text-sm">LOREM IPSUM</p>
+                    <ul class="mt-4">
+                        <li><a href="#" class="text-base">Lorem ipsum 1</a></li>
+                        <li><a href="#" class="text-base">Lorem ipsum 2</a></li>
+                        <li><a href="#" class="text-base">Lorem ipsum 3</a></li>
+                        <li><a href="#" class="text-base">Lorem ipsum 4</a></li>
+                        <li><a href="#" class="text-base">Lorem ipsum 5</a></li>
+                        <li><a href="#" class="text-base">Lorem ipsum 6</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-red-300 uppercase text-sm">LOREM IPSUM</p>
+                    <div class="py-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                    <div class="mt-5">
+                        <a href="#" class="btn btn-primary w-full block">Contact us</a>
+                    </div>
+                    <div class="mt-14">
+                        <p class="text-sm">© Copyright 2024, crafted by ckc-net.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.map"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
