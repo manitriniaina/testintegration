@@ -1,0 +1,45 @@
+@layer utilities {
+    .bg-pseudo {
+        @apply relative;
+        &:before {
+            content: '';
+            @apply absolute top-0 left-0 right-0 bottom-0 bg-dark-500 bg-opacity-35 z-10;
+        }
+    }
+    .bg-pseudo-primary {
+        @apply relative;
+        &:before {
+            content: '';
+            @apply absolute top-0 left-0 right-0 bottom-0 bg-primary bg-opacity-35 z-10;
+        }
+    }
+    .bg-pseudo-linear {
+        @apply relative;
+        &:before {
+            content: '';
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(2,45,69,1) 100%);
+            @apply absolute top-0 left-0 right-0 bottom-0 z-10;
+        }
+    }
+
+    .col-transform {
+        overflow: hidden;
+        .bg-pseudo-primary {
+            clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0 100%);
+            @apply ml-[-3%] mr-[-3%];
+            .content {
+                @apply px-5 w-3/4 mx-auto;
+            }
+            &:first-child {
+                clip-path: polygon(0 0, 100% 0%, 85% 100%, 0 100%);
+            }
+            &:last-child {
+                clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0 100%);
+            }
+            @media screen and (max-width: 1024px) {
+                clip-path: none !important;
+            }
+        }
+    }
+}

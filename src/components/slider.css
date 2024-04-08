@@ -1,0 +1,17 @@
+@layer components {
+    .slider-hidden {
+        .slick-slide {
+            transform: translateX(-20%);
+            @media screen and (max-width: 1024px){
+                transform: none;
+            }
+        }
+    }
+    .buttons-slider {
+        .slick-prev,
+        .slick-next {
+            &:before { display: none; }
+            @apply relative left-0 right-0 top-0 transform-none w-[65px] h-[65px] bg-white flex items-center justify-center shadow-[0px_10px_58px_-15px_rgba(0,0,0,0.4)];
+        }
+    }
+}

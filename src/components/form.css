@@ -1,0 +1,29 @@
+@layer components {
+    input {
+        @apply bg-gray-400 h-10;
+    }
+    .range-slider {
+        @apply bg-gray-600 w-full z-10 relative h-[2px] rounded-[15px];
+        .progress {
+            @apply bg-red-300 absolute left-[25%] right-0 h-full rounded-[15px];
+        }
+        input[type="range"] {
+            @apply absolute w-full h-[10px] top-[-3px] appearance-none pointer-events-none bg-transparent outline-none;
+        }
+        .range-min::-webkit-slider-thumb,
+        .range-max::-webkit-slider-thumb {
+            @apply bg-red-300 z-10 w-[15px] h-[15px] hover:cursor-pointer rounded-[20px] pointer-events-auto appearance-none;
+        }
+    }
+    .numberVal {
+        input[type="number"] {
+            @apply w-auto p-0 font-medium text-xs;
+        }
+        /* get the last */
+        &:last-child {
+            input[type="number"] {
+                @apply text-right;
+            }
+        }
+    }
+}

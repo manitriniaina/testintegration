@@ -1,0 +1,28 @@
+
+@layer components {
+    header {
+        background: url('../images/bateau-sur-plan-eau.jpg') no-repeat center center/cover;
+    }
+
+    #menu {
+        @apply transition-all duration-300 ease-in-out;
+    }
+    @media (max-width: 768px) {
+        #menu {
+            transition: all 0.3s ease-in-out;
+            @apply h-0;
+        }
+        #menu.active {
+            @apply flex w-full absolute bg-white left-0 top-[90%] flex-col p-4 h-auto;
+        }
+        #menu.active a {
+            @apply text-primary;
+        }
+    }
+      
+    @media (min-width: 768px) {
+        .nav {
+          display: flex;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@layer components {
+    .btn {
+        @apply px-8 py-3 transition-all text-center;
+    }
+    .btn-primary {
+        @apply px-14 py-4 text-white bg-red-300 text-sm hover:bg-red-500 uppercase;
+    }
+
+    .bg-gradient-light {
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(246,247,255,1) 100%);
+    }
+}
